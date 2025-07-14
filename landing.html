@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beginner Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #4f8cff;
+      color: #fff;
+      padding: 24px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 12px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #ffda79;
+    }
+    .hero {
+      background: #eaf1fb;
+      padding: 48px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+    }
+    .hero button {
+      padding: 12px 32px;
+      background: #4f8cff;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .hero button:hover {
+      background: #356ac3;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 960px;
+      gap: 24px;
+    }
+    .feature-box {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      flex: 1 1 250px;
+      padding: 32px 20px;
+      min-width: 250px;
+      max-width: 300px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .feature-box:hover {
+      box-shadow: 0 4px 16px rgba(79,140,255,0.15);
+    }
+    .feature-box h2 {
+      color: #4f8cff;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+    .feature-box p {
+      color: #444;
+      font-size: 1rem;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 40px;
+      font-size: 0.95rem;
+    }
+    /* Responsive design */
+    @media (max-width: 900px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      .feature-box {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Awesome Landing Page</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Welcome to Your Next Project</h1>
+    <p>Build beautiful web pages with ease. Unleash your creativity and learn the basics of web development!</p>
+    <button>Get Started</button>
+  </section>
+  <section class="features">
+    <div class="feature-box">
+      <h2>Easy Layouts</h2>
+      <p>Use columns and sections to organize your content for a clean and modern look.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Custom Styles</h2>
+      <p>Experiment with colors, padding, and alignments to make your page unique.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Responsive Design</h2>
+      <p>Your landing page will look great on any device, big or small.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
